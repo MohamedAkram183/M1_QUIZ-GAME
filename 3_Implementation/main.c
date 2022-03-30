@@ -200,11 +200,14 @@ game:
 		printf("\n\nA.Football\t\tB.Basketball\n\nC.Cricket\t\tD.Baseball");
 		if (toupper(getch())=='C')
 			{printf("\n\nCorrect!!!");countr++;getch();
-			 break;getch();}
+			 break;
+			 getch();
+			}
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.Cricket");getch();
 		       goto score;
-		       break;}
+		       break;
+		       }
 
 		case 2:
 		printf("\n\n\nStudy of Earthquake is called............,");
