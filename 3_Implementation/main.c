@@ -495,6 +495,7 @@ void reset_score()
 	fscanf(f,"%19s%f",&nm[0],&sc);
 	sc=0;
 	fprintf(f,"%s,%.2f",nm,sc);
+        fflush(FILE *ostream);
     fclose(f);}
 
 void help()
