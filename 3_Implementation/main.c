@@ -9,7 +9,7 @@ void help();
 void edit_score(float , char []);
 int main()
      {
-     int countr,r,r1,count,i,n;
+     int countr,r,r1,count,i;
      float score;
      char choice;
      char playername[20];
@@ -54,7 +54,7 @@ int main()
      system("cls");
 
     printf("\n\n\n\n\n\n\n\n\n\n\t\t\tRegister your name:");
-     gets(playername);
+     fgets(playername);
 
     system("cls");
     printf("\n ------------------  Welcome %s to Ultimate quiz game --------------------------",playername);
@@ -81,7 +81,7 @@ int main()
 	else
 		{
         goto mainhome;
-       system("cls");
+      
        }
 
      home:
@@ -201,12 +201,12 @@ game:
 		if (toupper(getch())=='C')
 			{printf("\n\nCorrect!!!");countr++;getch();
 			 break;
-			 getch();
+			
 			}
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.Cricket");getch();
 		       goto score;
-		       break;
+		      
 		       }
 
 		case 2:
@@ -218,7 +218,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
 		      goto score;
-		       break;
+		       
 		       }
 
         case 3:
@@ -230,7 +230,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.8");getch();
 		       goto score;
-		       break;}
+		      }
 
         case 4:
 		printf("\n\n\nThe Laws of Electromagnetic Induction were given by?");
@@ -242,7 +242,7 @@ game:
 		       {
                 printf("\n\nWrong!!! The correct answer is A.Faraday");getch();
 		       goto score;
-		       break;
+		      
 		       }
 
         case 5:
@@ -255,7 +255,7 @@ game:
 		           printf("\n\nWrong!!! The correct answer is B.Power");
 		       getch();
 		       goto score;
-		       break;
+		      
 		       }
 
 		case 6:
@@ -266,7 +266,7 @@ game:
 			 break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is B.Cobalt");goto score;
-		       getch();
+		       
 		       break;}
 
         case 7:
@@ -278,7 +278,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.Nippon");getch();
 		       goto score;
-		       break;}
+		       }
 
         case 8:
 		printf("\n\n\nHow many times a piece of paper can be folded at the most?");
@@ -288,7 +288,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is B.7");getch();
 		       goto score;
-		       break;}
+		      }
 
         case 9:
 		printf("\n\n\nWhat is the capital of Denmark?");
@@ -299,7 +299,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Copenhagen");getch();
 		       goto score;
-		       break;}
+		       }
 
         case 10:
 		printf("\n\n\nWhich is the longest River in the world?");
@@ -307,7 +307,7 @@ game:
 		if (toupper(getch())=='A')
 			{printf("\n\nCorrect!!!");countr++;getch(); break;}
 		else
-		       {printf("\n\nWrong!!! The correct answer is A.Nile");getch();break;goto score;}
+		       {printf("\n\nWrong!!! The correct answer is A.Nile");getch();goto score;}
 
         case 11:
 		printf("\n\n\nWhat is the color of the Black Box in aeroplanes?");
@@ -317,7 +317,7 @@ game:
 			 break;}
 		else
               {printf("\n\nWrong!!! The correct answer is C.Orange");getch();
-              break;goto score;}
+              goto score;}
 
         case 12:
 		printf("\n\n\nWhich city is known at 'The City of Seven Hills'?");
@@ -327,7 +327,7 @@ game:
 			   break;}
 		else
               {printf("\n\nWrong!!! The correct answer is A.Rome");getch();
-              break;goto score;}
+              goto score;}
 
 		case 13:
 		printf("\n\n\nName the country where there no mosquitoes are found?");
@@ -337,7 +337,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.France");getch();
-		       break;goto score;}
+		       goto score;}
 
         case 14:
 		printf("\n\n\nWho is the author of 'Pulpasa Cafe'?");
@@ -347,7 +347,7 @@ game:
 			 break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Narayan Wagle");getch();
-		       break;goto score;}
+		       goto score;}
 
 		case 15:
 		printf("\n\n\nWhich Blood Group is known as the Universal Recipient?");
@@ -358,7 +358,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is B.AB");getch();
 		       goto score;
-		       break;}
+		       }
 
 		case 16:
 		printf("\n\n\nWhat is the unit of measurement of distance between Stars?");
@@ -370,7 +370,7 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Light Year");getch();
 		       goto score;
-		       break;}
+		       }
 
 
 		case 17:
@@ -381,7 +381,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Brazil");getch();goto score;
-		       break;}
+		       }
 
 		case 18:
 		printf("\n\n\nWind speed is measure by__________?");
@@ -391,7 +391,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.Anemometer");getch();goto score;
-		       break;}
+		       }
 
 		case 19:
 		printf("\n\n\nWhich city in the world is popularly known as The City of Temple?");
@@ -401,7 +401,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.Kathmandu");getch();goto score;
-		       break;}
+		       }
 
 		case 20:
 		printf("\n\n\nWhich hardware was used in the First Generation Computer?");
@@ -411,7 +411,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is B.Valves");getch();goto score;
-		       break;}
+		       }
 
 		case 21:
 		printf("\n\n\nOzone plate is being destroyed regularly because of____ ?");
@@ -421,7 +421,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is D. C.F.C");getch();goto score;
-		       break;}
+		       }
 
 		case 22:
 		printf("\n\n\nWho won the Women's Australian Open Tennis in 2007?");
@@ -431,7 +431,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.Serena Williams");getch();goto score;
-		       break;}
+		       }
 
 		case 23:
 		printf("\n\n\nWhich film was awarded the Best Motion Picture at Oscar in 2010?");
@@ -441,7 +441,7 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.The King's Speech");getch();goto score;
-		       break;}}}
+		       }}}
 	score:
     system("cls");
 	score=(float)countr*100000;
@@ -479,7 +479,7 @@ void show_record()
 	float scr;
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&name,&scr);
+	fscanf(f,"%1234s%f",&name[0],&scr);
 	printf("\n\n\t\t*************************************************************");
 	printf("\n\n\t\t %s has secured the Highest Score %0.2f",name,scr);
 	printf("\n\n\t\t*************************************************************");
@@ -492,7 +492,7 @@ void reset_score()
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r+");
-	fscanf(f,"%s%f",&nm,&sc);
+	fscanf(f,"%1234s%f",&nm[0],&sc);
 	sc=0;
 	fprintf(f,"%s,%.2f",nm,sc);
     fclose(f);}
@@ -523,7 +523,7 @@ void edit_score(float score, char plnm[20])
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&nm,&sc);
+	fscanf(f,"%1234s%f",&nm,&sc);
 	if (score>=sc)
 	  { sc=score;
 	    fclose(f);
