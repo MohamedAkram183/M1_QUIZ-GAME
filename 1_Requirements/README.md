@@ -30,7 +30,7 @@
 
 | ID | Description | HR ID | Status |
 |--|--|--|--|
-| LR01 |Main menu should consist 4 options: 1.Main, 2.Start, 3.Highscore,4.Exit  | HR01| Implemented |
+| LR01 |Main menu should consist 5 options: 1.Start, 2.View, 3.Reset,4.Help,5.Quit  | HR01| Implemented |
 | LR02 | Reading user input to select particular option | HR01| Implemented |
 | LR03 | To display the instructions of the game  | HR03| Implemented |
 | LR04 | Displaying the topscorers  | HR04| Implemented |
