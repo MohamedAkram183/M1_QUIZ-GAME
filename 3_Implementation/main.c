@@ -54,7 +54,7 @@ int main()
      system("cls");
 
     printf("\n\n\n\n\n\n\n\n\n\n\t\t\tRegister your name:");
-     fgets(playername);
+     gets(playername);
 
     system("cls");
     printf("\n ------------------  Welcome %s to Ultimate quiz game --------------------------",playername);
